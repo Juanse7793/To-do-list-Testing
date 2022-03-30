@@ -29,9 +29,9 @@ describe('remove things', () => {
 
 describe('Events', () => {
   test('press enter to add a new task', () => {
-    expect(events.keypress()).toBe('the object is added');
+    expect(events.keypress()).toBe('the <li> is added');
   });
   test('click to remove a task', () => {
-    expect(events.click()).toBe('the object is removed');
+    expect(events.click()).toBe('the <li> is removed');
   });
 });
