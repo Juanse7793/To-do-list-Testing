@@ -20,7 +20,7 @@ class ArrayOfTodos {
       this.array = this.array.filter((todo) => todo.checkbox !== checkbox
       || todo.description !== description || todo.index !== index);
       // this.organizeIndex();
-      // this.lStorage();
+      this.lStorage();
       return index;
     }
 }
