@@ -29,20 +29,14 @@ class ArrayOfTodos {
   }
 
   editText = (index, content) => {
+    const newEdit = {
+      index,
+      content,
+    };
+
     this.array[index].description = content;
     this.lStorage();
-    return `The object in the index ${index} has edited with ${content}`
-  }
-
-  checked = (index, bool) => {
-    this.array[index].checkbox = bool;
-    this.lStorage();
-  }
-
-  clean = () => {
-    this.array = this.array.filter((todo) => todo.checkbox === false);
-    this.organizeIndex();
-    this.lStorage();
+    return newEdit;
   }
 }
 

@@ -27,20 +27,22 @@ class ArrayOfTodos {
     editText = (index, content) => {
       // this.array[index].description = content;
       this.lStorage();
-      return `The object in the index ${index} has edited with ${content}`;
+      return `the description of the object in the index ${index} has edited with ${content}`;
     }
-  
-    checked = (index, bool) => {
-      this.array[index].checkbox = bool;
+
+    checked = (index) => {
+      // this.array[index].checkbox = bool;
       this.lStorage();
+      return `the task at index ${index} has been ccompleted`;
     }
-  
+
     clean = () => {
-      this.array = this.array.filter((todo) => todo.checkbox === false);
+      // this.array = this.array.filter((todo) => todo.checkbox === false);
       // this.organizeIndex();
       this.lStorage();
+      return 'the completed tasks have been removed';
     }
-  }
+}
 
 const array = new ArrayOfTodos();
 
