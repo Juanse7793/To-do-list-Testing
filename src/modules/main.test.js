@@ -35,3 +35,10 @@ describe('Events', () => {
     expect(events.click()).toBe('the <li> is removed');
   });
 });
+
+describe('Edit things', () => {
+  test('Select the object and edit', () => {
+    expect(main.editText(1, 'edit text')).toStrictEqual('The object in the index 1 has edited with edit text');
+  });
+});
+  

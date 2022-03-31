@@ -42,6 +42,23 @@ const change = (check, index) => {
   });
 };
 
+const checkTask = (index) => {
+  check.addEventListener('change', (e) => {
+    if (e.target.checked) {
+      todos.checked(index, true);
+    } else {
+      todos.checked(index, false);
+    }
+  });
+}
+
+const cleanClick = (btn) => {
+  btn.addEventListener('click', () => {
+    todos.clean();
+    display();
+  });
+}
+
 module.exports = {
   click, keyDown, input, mark, change,
 };
