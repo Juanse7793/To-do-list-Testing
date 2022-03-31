@@ -8,4 +8,12 @@ const keypress = () => {
   return 'the <li> is not added';
 };
 
-module.exports = { keypress, click };
+const cleanClick = () => 'the completed tasks have been removed';
+
+const change = () => 'the checkbox bool value has changed';
+
+const input = () => 'the description of the task is editing';
+
+module.exports = {
+  keypress, click, cleanClick, change, input,
+};

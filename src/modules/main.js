@@ -27,6 +27,17 @@ class ArrayOfTodos {
     this.lStorage();
     return index;
   }
+
+  editText = (index, content) => {
+    const newEdit = {
+      index,
+      content,
+    };
+
+    this.array[index].description = content;
+    this.lStorage();
+    return newEdit;
+  }
 }
 
 const array = new ArrayOfTodos();
