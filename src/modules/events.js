@@ -50,15 +50,15 @@ const checkTask = (index) => {
       todos.checked(index, false);
     }
   });
-}
+};
 
 const cleanClick = (btn) => {
   btn.addEventListener('click', () => {
     todos.clean();
-    display();
+    // display();
   });
-}
+};
 
 module.exports = {
-  click, keyDown, input, mark, change,
+  click, keyDown, input, mark, change, cleanClick, checkTask,
 };
